@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def no_c(my_string):
     no_c = ""
     for i in range(len(my_string)):
