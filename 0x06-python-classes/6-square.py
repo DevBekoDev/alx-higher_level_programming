@@ -95,7 +95,7 @@ class Square:
         in form of #
         """
         if self.__size == 0:
-            print("")
+            print()
             return
 
         for x in range(0, self.__position[1]):
