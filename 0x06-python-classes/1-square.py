@@ -10,9 +10,8 @@ class Square:
     """class square
 
     defining class args
-    
-    """
 
+    """
 
     def __init__(self, size):
         """square has a size
@@ -21,6 +20,4 @@ class Square:
 
         """
 
-
         self.__size = size
-
