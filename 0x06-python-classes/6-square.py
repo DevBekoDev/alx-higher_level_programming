@@ -3,6 +3,7 @@
 """square class
 
     defining class args
+
 """
 
 
@@ -17,6 +18,7 @@ class Square:
     def size(self):
         """size of sqaure
         return the size of the square
+
         """
 
         return self.__size
@@ -26,6 +28,7 @@ class Square:
         """size of the square
 
         return the size of the square
+
         """
 
         if not isinstance(value, int):
@@ -39,6 +42,7 @@ class Square:
     def position(self):
         """posiiton
         private
+
         """
         return self.__position
 
