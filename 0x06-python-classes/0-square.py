@@ -9,5 +9,4 @@ class Square:
     creating a sqaure class
     """
 
-
     pass
