@@ -63,11 +63,11 @@ class Square:
 
         """
 
-        self.__size = size
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
+        self.__size = size
 
         if not(isinstance(position, tuple) and
                 len(position) == 2 and isinstance(position[0], int) and
@@ -92,8 +92,8 @@ class Square:
         """
         if self.__size == 0:
             print("")
-        else:
-            for x in range(0, self.__position[1]):
-                print()
-            for x in range(0, self.__size):
-                print((" " * self.__position[0]) + "#" * self.__size)
+
+        for x in range(0, self.__position[1]):
+            print()
+        for x in range(0, self.__size):
+            print("{}{}".format(" " * self.__position[0], "#" * self.__size))
