@@ -130,6 +130,10 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """
+        new Rectangle instance with width == height == size
+        """
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
