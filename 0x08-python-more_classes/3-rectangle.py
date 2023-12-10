@@ -81,8 +81,13 @@ class Rectangle:
         Draw the Rectangle
         """
 
-        if width == 0 or height == 0:
-            print("")
+        if self.__width == 0 or self.__height == 0:
+            return ""
         else:
-            for i in range(self.__height):
-                print("#" * self.__width)
+            str = ""
+            for row in range(self.__height):
+                for col in range(self.__width):
+                    str += '#'
+                if self.__width != 0 and row < (self.__height - 1):
+                    str += '\n'
+        return str
