@@ -5,4 +5,6 @@ Rectangle Class
 
 
 class Rectangle:
+    """ Rectangle Class"""
+
     pass
