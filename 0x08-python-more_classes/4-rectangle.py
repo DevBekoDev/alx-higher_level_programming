@@ -92,7 +92,7 @@ class Rectangle:
                     str += '\n'
         return str
 
-    def repr(self):
+    def __repr__(self):
         """
         String represntation for the rectangle
         """
