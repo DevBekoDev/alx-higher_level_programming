@@ -82,7 +82,7 @@ class Rectangle:
         """
 
         if width == 0 or height == 0:
-            print()
+            print("")
         else:
             for i in range(self.__height):
                 print("#" * self.__width)
