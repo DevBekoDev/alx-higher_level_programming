@@ -3,7 +3,6 @@
 if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  const list = process.argv.slice(2);
-  const sorted = list.sort();
-  console.log(sorted[sorted.length - 2]);
+  const list = process.argv.sort();
+  console.log(list[list.length - 2]);
 }
