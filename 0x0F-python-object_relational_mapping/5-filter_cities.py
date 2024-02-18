@@ -9,12 +9,11 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3])
 
     curr = db.cursor()
-    curr.execute("SELECT cities.id, cities.name, states.name FROM cities "
-                 "JOIN states ON cities.state_id = states.id "
-                 "ORDER BY cities.id ASC")
-    rows = curr.fetchall()
+    curr.execute("""SELECT cities.name FROM cities
+                 JOIN states ON cities.state_id = states.id
+                 WHERE states.name = %s
+                 ORDER BY cities.id ASC""", (argv[4], ))
 
-    for row in rows:
-        print(row)
+    print(", ".join(map(lambda x: x[0], curr.fetchall())))
     curr.close()
     db.close()
