@@ -1,4 +1,4 @@
 #!/bin/bash
 # display body size from sent request to a url
 
-curl -sw '%{size_download}\n' -o /dev/null "$1"
+curl -s "$1" | wc -c
